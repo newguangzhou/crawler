@@ -1,0 +1,36 @@
+# -*- coding: utf-8 -*-
+
+EC_SUCCESS = 0  # 成功
+EC_FREQ_LIMIT = 1  # 频率限制
+EC_INVALID_VERIFY_CODE = 2  # 无效的验证码
+EC_USER_NOT_EXIST = 3  # 用户不存在
+EC_PET_NOT_EXIST = 4  # 宠物不存在
+EC_INVALID_TOKEN = 5  # 无效的token
+EC_USER_ALREADY_LOGINED = 6  # 用户已经登录
+EC_USER_NOT_LOGINED = 7  # 用户没有登录
+EC_SYS_ERROR = 8  # 系统错误
+EC_UNKNOWN_ERROR = 9  # 未知错误
+EC_INVALID_ARGS = 10  # 无效的参数
+EC_ACCOUNT_FREEZED = 11  # 帐号被冻结
+EC_TOKEN_EXPIRED = 12  # token超时
+EC_VERIFY_CODE_EXPIRED = 13  #验证码超时
+EC_USER_ALREADY_REGISTERED = 20  # 已结注册
+EC_INVALID_FILE_TYPE = 21  # 文件类型不对
+EC_ACCOUNT_FREEZED_TEMP = 22  # 账号被暂时冻结
+EC_FAIL = 23
+EC_EXIST = 24
+EC_BINDDING_IN_PROGRESS = 25   #追踪器正在绑定
+EC_DEVICE_NOT_EXIST = 30  #追踪器不存在
+#EC_DEVICE_BINDED = 31  #
+EC_CURRENT_TIME_NOT_ALLOW = 31  #当前时段不允许
+EC_NODATA = 32  #没有数据
+EC_NEED_VERIFY_CODE = 33
+EC_FILE_SIZE_LIMIT  = 34  #文件大小超出限制
+EC_PERMISSION_DENIED = 40  #权限不足
+EC_SLAVE_IS_EXIST    = 41  #子账号已经添加过
+EC_IS_SLAVE          = 42  #该用户是这个IMEI的子账户
+EC_LOGIN_IN_OTHER_PHONE = 50
+EC_WX_OPENID_HAS_BINDED = 60  # 该微信已经绑定了手机号码
+EC_MOBILE_HAS_BINDED_WX = 61         # 该手机号已经绑定了微信
+EC_WX_NOT_BINDED = 62  # 该微信没有绑定
+EC_SEND_CMD_FAIL = 100
