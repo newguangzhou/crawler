@@ -77,3 +77,10 @@ def is_valid_phone_num(phone_num):
     p = re.compile(
         '^((13[0-9])|(14[0-9])|(15[0-9])|(16[0-9])|(17[0-9])|(18[0-9])|(19[0-9]))\d{8}$')
     return p.match(phone_num)
+
+
+
+import json
+def loadJsonConfig(config_file_name="../../configs/config.json"):
+    with open (config_file_name,"r",encoding='utf-8') as json_file:
+        return  json.load(json_file)

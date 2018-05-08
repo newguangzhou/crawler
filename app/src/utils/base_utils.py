@@ -8,6 +8,7 @@ import tornado.options
 from tornado.ioloop import IOLoop
 
 # from lib.sys_config import SysConfig
+from configs.constants import *
 
 import time
 import socket
@@ -47,6 +48,7 @@ def init_service(service_name, log_level=logging.INFO):
     # sched.start()
     # 打开sysconfig
     # SysConfig.new(mongo_meta=mongo_conf.global_mongo_meta)
+    Constants.new()
     # IOLoop.current().run_sync(SysConfig.current().open)
     # res = {
     #     "conf":conf,
@@ -99,6 +101,10 @@ def get_local_ip():
     return myaddr
 
 import requests
+
+
+def date2int(dt):
+    return int(time.mktime(dt.timetuple()))
 
 
 

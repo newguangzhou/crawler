@@ -1,0 +1,95 @@
+{
+        "test_mode":0,
+        "debug_mode":0,
+        "FILE_BASE_URL":"http://gateway.xiaomaoqiu.com:9700/file/get",
+        "terminal_rpc_url":"http://10.27.168.111:15070",
+        "allow_ip_for_bind_weixin":["120.78.249.95"],
+        "msg_rpc_url":"http://10.27.168.111:9200",
+        "ios_force_update_version":"1.2.0",
+        "support_emails":["zhujie@xiaomaoqiu.com","huoqiancheng@xiaomaoqiu.com"],
+        "recharge_notice_list":["zhujie@xiaomaoqiu.com","kongqianqian@xiaomaoqiu.com"],
+        "exhibition_imeis":[
+        "357396080001218"
+        ],
+        "promotion":[{
+      "picUrl":"http://p27yj3bs7.bkt.clouddn.com/activity_temp.jpg",
+      "type":1,
+      "url":"https://h5.xiaomaoqiu.com/getnew/inapp/inapp.html",
+      "expiry_time":"2018-08-01 00:00:00"
+        }],
+
+
+        "mongodb":{
+                "hosts":"10.45.183.226",
+                "port":27020,
+                "username":"root",
+                "passwd":"mgdb8w34asdadat51!((",
+                "repl_set_name":"mongo_shard1"
+        },
+        "phone_num_for_test": ["13625959027"],
+        "log":{
+
+        },
+        "user_srv_d":{
+                "port":9100,
+                "console_port":9110
+
+        },
+        "terminal_srv_d":{
+                "port":15070,
+                "log_servers":[
+                {"name":"online","ip":"120.78.17.193"}
+                ]
+        },
+        "dev_net_srv_d":{
+                "tcp_port":15050,
+                "port":15060
+        },
+
+        "msg_srv_d":{
+                "port":9200,
+                "console_port":9210,
+
+                "comment_ymrt":"亿美软通的cdkey",
+                "ymrt_cdkey" : "6SDK-EMY-6688-KKVUN",
+                         "ymrt_passwd": "066884" ,
+
+                "nexmo_key" : "c898a8a3",
+                "nexmo_secret" : "d5c75dc8",
+
+                "default_push_title" : "小毛球",
+                "mipush_host" : "api.xmpush.xiaomi.com",
+
+                "mipush_appsecret_android" : "aQLLX8h129sPKm3NeY9lcA==",
+                "mipush_appsecret_ios" : "Cy4/cc5TazG663ClQpkgJg==",
+                "mipush_bundle_id" : "com.xiaomaoqiu.catchpet",
+                "mipush_pkg_name" : "com.xiaomaoqiu.pet",
+                "mipush_callback_url" : "http://gateway.xiaomaoqiu.com:9200/msg/xm_callback",
+
+                "dayu_appkey" : "23566149",
+                "dayu_secret" : "f95d87510975317c9539d858c010f5a0",
+                "weixin_push_url" : "https://api.weixin.qq.com/cgi-bin/message/template/send",
+        "get_weixin_token_url" : "https://wechat.xiaomaoqiu.com/event/api/getWXToken.php",
+        "wx_template_dic":{
+            "1":"mRn1WdGNYVCFLAf2zRMEF_1S9fX3_wECDjK-ZZ3RsR0",
+            "2":"xmxTsyESadfHcnxXa4p5wO2n-df5nWoMsXgCZM5OpbM",
+            "8":"bQWnvlSMdmUi2mbKzhzkRRCuI_wYzxwHK82dNGKu2rU",
+            "9":"bQWnvlSMdmUi2mbKzhzkRRCuI_wYzxwHK82dNGKu2rU"
+        }
+
+
+        },
+        "file_srv_d":{
+                "port":9700,
+                "console_port":9710
+
+        },
+        "admin_srv_d":{
+        "wx_appid":"wx4df04fb352261bf6",
+        "wx_secret":"571315a971777188e664c08a03e46b6c",
+                "can_regist":0,
+                "port":9500
+        }
+
+}
+

@@ -13,9 +13,15 @@ importlib.reload(sys)
 import logging
 import handlers
 from utils import base_utils
+from db.auth.auth_dao import AuthDAO
+from db.user.user_dao import UserDAO
+from db.mongo_dao_base import MongoMeta
+
+from rpc.msg_rpc import MsgRPC
 
 from tornado.options import define,options
 from tornado import ioloop
+
 
 define("port",default=443,help="run tornado service",type=int)
 
@@ -32,7 +38,12 @@ if __name__=="__main__":
          ],
         autoreload=True,
         debug=True,
+        auth_dao=AuthDAO.new(mongo_meta=MongoMeta()),
+        user_dao=UserDAO.new(mongo_meta=MongoMeta()),
     )
+    webapp.settings["msg_rpc"] = MsgRPC("http://127.0.0.1:9200")
+
+
     base_utils.try_listen_web(webapp, '0.0.0.0', options.port)
 
     ioloop.IOLoop.current().start()

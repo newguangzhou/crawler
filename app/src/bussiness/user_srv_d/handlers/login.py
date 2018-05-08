@@ -59,7 +59,7 @@ class Login(HelperHandler):
                 if uid:
                     logging.info("add new user,mobile number:%s, uid:%d",phone_num, uid)
         # 生成token
-            expire_secs = SysConfig.current().get(
+            expire_secs = SysConfig.get_instance().get(
                 sys_config.SC_TOKEN_EXPIRE_SECS)
             token = yield auth_dao.gen_user_token(uid, True, device_type,device_token,
                 expire_secs, custom_headers["platform"], custom_headers["device_model"],x_os_int)
